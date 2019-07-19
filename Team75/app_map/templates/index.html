@@ -1,0 +1,308 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Kodinger">
+<meta name="keyword" content="Kodinger, template, html5, css3, bootstrap4">
+<meta name="description" content="HTML5 and CSS3 Template Based on Bootstrap 4">
+<title>Home</title>
+<link rel="stylesheet" href="{% static "ionicons/css/ionicons.min.css" %}">
+<link rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+<link rel="stylesheet" href="{% static "sweetalert/dist/sweetalert.css" %}">
+<link rel="stylesheet" href="{% static "css/stisla.css" %}">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC4XatT9vxskvkPJPaH8VYreC0Cq2eXD34"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+<style type="text/css">
+   * { margin:0; padding:0; list-style:none; font-size:14px;touch-action: pan-y;} 
+   .d1{
+
+     position: relative;
+     bottom: 0px;
+   }
+   .d2{
+     float:left;
+     
+   }
+   .map1{
+        float:left
+   }
+   .map2{
+       float:right;
+   }
+   .button {
+     display: inline-block;
+     border-radius: 4px;
+     background-color: #f4511e;
+     border: none;
+     background-color: white; 
+     color: black; 
+     border: 2px solid #555555;
+     text-align: center;
+     font-size: 18px;
+     padding: 10px;
+     width: 20%;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 4px 2px;
+    }
+   .button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg main-navbar">
+	<div class="container-fluid">			
+	  <a class="navbar-brand" href="#">
+		<img src="{% static "img/logo-light.png" %}" alt="Logo">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon">
+			<i class="ion-navicon"></i>
+		</span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+		  <div class="mr-auto"></div>
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+			<a class="nav-link smooth-link" href="#hero">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link smooth-link" href="#features">Stisla's Features</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link smooth-link" href="#blog">Blog</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link smooth-link" href="#project">Project</a>
+		  </li>
+		</ul>
+		<form class="form-inline">
+			<a href="#contact" class="btn smooth-link align-middle btn-primary">Need Help?</a>
+		</form>
+	  </div>
+  </div>
+</nav>
+<section class="hero bg-overlay" id="hero" data-bg="img/hero.jpeg">
+	<div class="text py-5">
+		<p class="lead">Fully responsive HTML5 &amp; CSS3 template</p>
+		<h1>I'm <span class="bold">stisla</span>, based on <span class="bold">Bootstrap 4</span>.</h1>
+		<div class="cta">
+			<a href="#features" class="btn btn-primary smooth-link">Get Started</a>
+			<div class="link">						
+				<a href="#">Under the MIT License</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="padding" id="features" style="width:100%;height:80%;">
+    <div id="map" class= "map1"style="width:80%;height:100%"></div>
+    <div class= "map2" style="width:20%;height:100%;">
+        <div id= "render" style = "width:100%;height:70%"></div>
+        <div style = "width:100%;height:30%">
+            <p id ="pp"></p>
+        </div>
+    </div>
+</section>
+
+<section class="padding bg-grey" id="blog">
+	
+</section>
+
+<section class="padding bg-grey" id="contact">
+	<div class="container">
+		<h2 class="section-title text-center">Contact Us</h2>
+		<p class="section-lead text-center text-muted">Send us your inquiry, we will help you and reply as soon as possible</p>
+		<div class="section-body">				
+			<div class="row col-spacing">
+				<div class="col-12 col-md-5">
+					<p class="contact-text">You can send us something like a question or project, we are open 09:00 to 17:00.</p>
+					<ul class="contact-icon">
+						<li><i class="ion ion-ios-telephone"></i> <div>+6212345123</div></li>
+						<li><i class="ion ion-ios-email"></i> <div>hi@kodinger.com</div></li>
+					</ul>
+					
+				</div>
+				<div class="col-12 col-md-7">
+					<form class="contact row" id="contact-form">
+						<div class="form-group col-6">
+							<input type="text" class="form-control" placeholder="Name" name="name" required="">
+						</div>
+						<div class="form-group col-6">
+							<input type="email" class="form-control" placeholder="Email" name="email" required="">
+						</div>
+						<div class="form-group col-12">
+							<input type="text" class="form-control" placeholder="Subject" name="subject" required="">
+						</div>
+						<div class="form-group col-12">
+							<textarea class="form-control" placeholder="Message" name="message" required></textarea>
+						</div>
+						<div class="form-group col-12 mt-2">
+							<button class="btn btn-primary">
+								Send Message
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="callout">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-12 col-md-8 text">
+				<h3>Start your project with this awesome template</h3>
+			</div>
+			<div class="col-12 col-md-4 cta">
+				<a href="#" class="btn btn-outline-primary">
+					Download Now
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<figure>
+			<img src="img/logo-light.png" alt="Logo">
+		</figure>
+		<p>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+	</div>
+</footer>
+
+<script src="{% static "js/jquery.min.js" %}"></script>
+<script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/jquery.easeScroll.js" %}"></script>
+<script src="{% static "sweetalert/dist/sweetalert.min.js" %}"></script>
+<script src="{% static "js/stisla.js" %}"></script>
+
+<script>
+var map;
+var myChart3 = echarts.init(document.getElementById('render'));
+function init() {
+  
+// 获取当前地理位置
+navigator.geolocation.getCurrentPosition(function(position)
+ {
+var coords = position.coords;
+// 设定地图参数，将用户的当前位置的经纬度设定为地图的中心点
+var latlng0 = new google.maps.LatLng(coords.latitude,coords.longitude);
+var myOptions= {
+// 设定放大倍数
+zoom:7,
+// 将地图中心点设定为指定的坐标点
+center: latlng0,
+// 指定地图类型
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+// 创建地图并在div中显示
+
+map =new google.maps.Map(document.getElementById("map"),myOptions);// draw the map
+var src1,src2,src3,src4;
+src1 = 'https://www.dropbox.com/s/wmj56ob6qao0jr4/gadm36_AUS_22.kml?dl=1';
+src2 = 'https://www.dropbox.com/s/ke4lk2st1z7x17s/gadm36_AUS_21.kml?dl=1';
+src4 = 'https://www.dropbox.com/s/zme5qg1y151d9aw/gadm36_AUS_4.kml?dl=1';
+src23 ='https://www.dropbox.com/s/t74i7ct03p5gdgp/gadm36_AUS_23.kml?dl=1';
+src24 = 'https://www.dropbox.com/s/pm6znczkz0dl7uo/gadm36_AUS_221.kml?dl=1';
+src25 = 'https://www.dropbox.com/s/hwbc3fz2kmvbtgj/gadm36_AUS_25.kml?dl=1';
+var kmllayer = new google.maps.KmlLayer({//get the kml file and add kml layer
+                 url:src1
+});
+kmllayer.setMap(map);
+var kmllayer21 = new google.maps.KmlLayer({//get the kml file and add kml layer
+                 url:src2
+});
+kmllayer21.setMap(map);
+var kmllayer1 = new google.maps.KmlLayer({//get the kml file and add kml layer
+                 url:src23
+});
+kmllayer1.setMap(map);
+var kmllayer2 = new google.maps.KmlLayer({//get the kml file and add kml layer
+                 url:src24
+});
+kmllayer2.setMap(map);
+var kmllayer3 = new google.maps.KmlLayer({//get the kml file and add kml layer
+                 url:src25
+});
+kmllayer3.setMap(map);
+var kmllayer4 = new google.maps.KmlLayer({//get the kml file and add kml layer
+                 url:src4
+});
+kmllayer4.setMap(map);
+google.maps.event.addListener(map, 'click', function(event) { //get position
+  center = event.latLng;
+  centerlat = center.lat();	
+  centerlng = center.lng();	
+  $.ajax({
+        type: 'POST',
+        url: 'test', //路由加'/'否则会报ssh错误
+        data: {
+            'lat': centerlat,
+            'lng': centerlng,
+        },
+        dataType: 'JSON',
+        success: function(data){
+                document.getElementById("pp").innerHTML=data['city']+','+data['state']+'<br>overweight: '+data['overweight']+'<br>obesity: '+data['obesity']
+                var option = {
+                    title: {
+                        text: 'Sentiment Analysis'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    series: [{
+                        name: 'Sentiment Analysis',
+                        type: 'pie',
+                        radius : '55%',
+                        center: ['50%', '60%'],
+                        data : [
+                        
+                            {value:data['neu'], name:'NEU'},
+                            {value:data['pos'], name:'POS'},
+                            {value:data['neg'], name:'NEG'}
+                            
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }]
+                    };   
+                myChart3.setOption(option)
+            },
+
+    })
+  
+  
+
+var googleContent = '<div>123dd</div>';
+
+});
+
+})}
+
+
+var src = 'https://www.dropbox.com/s/agdk3o0zeo6ic83/gadm36_AUS_1.kml?dl=0';
+
+//google.maps.event.addDomListener(window, 'load', init);
+
+</script>
+
+</body>
+</html>

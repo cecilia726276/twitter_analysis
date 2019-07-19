@@ -1,0 +1,36 @@
+input:
+{
+  "_id": "1122781609395216384",
+  "_rev": "1-5155a04e6545e93efc4bc196afe46829",
+  "content": "These burn offs do cause very poor #airpollution in South West #Sydney, it’s also inner Sydney / here is Princes Hi… https://t.co/vZqviNSm8C",
+  "coordinates": null,
+  "location": "Liverpool",
+  "when": "Mon Apr 29 08:36:10 +0000 2019"
+}
+
+output:
+{
+  "_id": "1122781609395216384",
+  "_rev": "1-5155a04e6545e93efc4bc196afe46829",
+  "new_coordinate" : {
+    "lat" : -35.315556,
+    "lng" : 149.144167
+  },
+  "content": "These burn offs do cause very poor airpollution in South West Sydney it’s also inner Sydney  here is Princes Hi…",
+  "when": "Mon Apr 29 08:36:10 +0000 2019",
+  "new_location":"Liverpool",
+  "state":"NSW",
+  "postcode": 2170,
+  score:{
+    "pos":0.0,
+    "neu":0.816,
+    "pos":0.184
+  },
+  "status": False
+
+}
+// 如果tweet带坐标，依然原来使用原来的坐标覆盖google map得出的结果
+// 目前保留postcode方便对州区块作细分
+// 内容是否有保留的必要？
+
+

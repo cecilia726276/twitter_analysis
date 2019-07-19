@@ -1,0 +1,89 @@
+pizza
+hamburger
+burger
+fries
+sandwich
+cheeseburger
+Donuts
+Fries
+Doughnuts
+Hash Brown
+McMuffin
+Nuggets
+Mashed Potatoes
+Pie
+Munchkins
+Whataburger
+Popcorn Chicken
+Chicken Fries
+Crispy Chicken
+Baconator
+Big Mac
+Quarter Pounder
+McNuggets
+Tacos
+Toaster
+Chicken Tenders
+Baked Potato
+Munchkins
+Pretzel
+Thickburger
+hot dog
+Kebab
+Onion ring
+Burrito
+Cookie
+Muffin
+Fried Chicken
+Baguette
+Sausage
+Pretzel
+Chip
+Bacon
+McFeast
+FILET-O-FISH
+Chicken'n'cheese
+McWrap
+Sundae
+zinger box
+Tender box
+Twister box
+Chicken wings
+Wicked wings
+Popcorn
+whopper
+BBQ Bacon
+BBQ Angus
+Bacon & Cheese
+X-tra Long Chicken
+Ham & Cheese
+Pepperoni
+Ground beef
+Pickled cucumber
+BBQ MEATLOVERS
+BEEF & ONION
+Meatball
+Garlic Bread
+Chicken kickers
+Churros
+Pancakes
+Wraps
+Big n'tasty
+paninis
+mealboxes
+Sweet Chilli Chicken
+BBQ Brisket
+Simply Grill'd
+Roast Chicken
+Roll
+Fish and chips
+Pita
+Nando's
+Hungry Jack's
+Domino's
+Red Rooster
+Oporto
+Grill'd
+KFC
+McDonald's
+fast food
